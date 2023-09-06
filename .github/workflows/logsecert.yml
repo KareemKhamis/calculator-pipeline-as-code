@@ -1,0 +1,13 @@
+name: Try to log Secrets
+
+on:
+  workflow_dispatch
+
+jobs: 
+  log:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: log the secrets
+        run: echo ${{secerts.TOKEN}}
+
+  
